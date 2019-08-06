@@ -33,21 +33,12 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="form-control">
-                            <input type="text" name="prioridad" class="form-control" placeholder="Prioridad de la tarea"/>
-                        </div>
+                        <select name="prioridad" class="form-control">
+                            <option>Alta</option>
+                            <option>Media</option>
+                            <option>Baja</option>
+                        </select>
                     </div>
-                    <!--
-                        Formulario con combobox
-                        <div class="form-group">
-                            <div class="form-control">
-                                <select
-                                    name="prioridad"
-                                
-                                />
-                            </div>
-                        </div>
-                    -->
                     <input type="submit" value="Agregar" class="btn btn-success">
                     <a class="btn btn-info" href="index.htm">Regresar</a>
                 </form>

@@ -15,6 +15,7 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">controlador</prop>
+                <prop key="agregarTarea.htm">controlador</prop>
             </props>
         </property>
     </bean>

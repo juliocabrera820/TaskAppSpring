@@ -20,12 +20,12 @@
     </nav>
     <div class="container">
         <div class="card-header bf-info text-white">
-            <a class="btn btn-success" href="agregarTarea.htm">Agregar</a>
+            <a class="btn btn-success float-left" href="agregarTarea.htm">Agregar</a>
         </div>
         <div class="row mt-4">
             <c:forEach var="dato" items="${datos}">
                 <div class="col-md-4">
-                    <div class="card mt-4 text-center">
+                    <div class="card mt-5 text-center mb-2">
                         <div class="card-header">
                             <h4>${dato.titulo}</h4>
                             <span class="badge badge-pill badge-danger ml-2">
@@ -36,6 +36,10 @@
                             ${dato.descripcion}
                             <p class="mt-4"><mark>${dato.responsable}</mark></p>
                         </div>
+                    </div>
+                    <div class="Button" align="center">
+                        <a href="editarTarea.htm?id=${dato.id}" class="btn btn-info">Editar</a>
+                        <a href="eliminarTarea.htm?id=${dato.id}" class="btn btn-danger">Eliminar</a>
                     </div>
                 </div>
             </c:forEach>

@@ -18,19 +18,10 @@
         <h1>Tareas</h1>
         <div class="container mt-4 col-lg-4">
             <div class="card border-info">
-                <div class="card-header bg-info" >
-                    <h3>Nuevo Registro</h3>
+                <div class="card-header bf-info text-white">
+                    <a class="btn btn-success" href="agregarTarea.htm">Agregar</a>
                 </div>
             </div>
-            <p>
-                <c:forEach var="dato" items="datos">
-                    ${dato.id}
-                    ${dato.titulo}
-                    ${dato.descripcion}
-                    ${dato.responsable}
-                    ${dato.prioridad}
-                </c:forEach>
-            </p>
         </div>
     </body>
 </html>

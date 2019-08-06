@@ -16,6 +16,8 @@
             <props>
                 <prop key="index.htm">controlador</prop>
                 <prop key="agregarTarea.htm">controlador</prop>
+                <prop key="editarTarea.htm">controlador</prop>
+                <prop key="eliminarTarea.htm">controlador</prop>
             </props>
         </property>
     </bean>

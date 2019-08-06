@@ -13,15 +13,33 @@
 
     <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a href="" class="text-white">Tareas</a>
+        <a href="" class="text-white">
+            Tareas
+            <span class="badge badge-pill badge-light">${datos.size()}</span>
+        </a>
     </nav>
-        <h1>Tareas</h1>
-        <div class="container mt-4 col-lg-4">
-            <div class="card border-info">
-                <div class="card-header bf-info text-white">
-                    <a class="btn btn-success" href="agregarTarea.htm">Agregar</a>
-                </div>
-            </div>
+    <div class="container">
+        <div class="card-header bf-info text-white">
+            <a class="btn btn-success" href="agregarTarea.htm">Agregar</a>
         </div>
-    </body>
+        <div class="row mt-4">
+            <c:forEach var="dato" items="${datos}">
+                <div class="col-md-4">
+                    <div class="card mt-4 text-center">
+                        <div class="card-header">
+                            <h4>${dato.titulo}</h4>
+                            <span class="badge badge-pill badge-danger ml-2">
+                                ${dato.prioridad}
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            ${dato.descripcion}
+                            <p class="mt-4"><mark>${dato.responsable}</mark></p>
+                        </div>
+                    </div>
+                </div>
+            </c:forEach>
+        </div>
+    </div>
+</body>
 </html>
